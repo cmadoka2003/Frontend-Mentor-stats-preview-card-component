@@ -1,0 +1,161 @@
+:root {
+    --Verydarkblue: hsl(233, 47%, 7%);
+    --Darkdesaturatedblue: hsl(244, 38%, 16%);
+    --Softviolet: hsla(277, 100%, 50%, 0.514);
+    --White: hsl(0, 0%, 100%);
+    --Slightlytransparentwhite: hsla(0, 0%, 100%, 0.75);
+    --Slightlyransparentwhite: hsla(0, 0%, 100%, 0.6);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110vh;
+    background: var(--Verydarkblue);
+    font-family: "Inter";
+}
+
+.content {
+    width: 375px;
+    height: 95%;
+}
+
+.color {
+    background-color: var(--Softviolet);
+    height: 275px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+#photo {
+    background: no-repeat center/cover url(./images/image-header-mobile.jpg);
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: -1;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.info {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.text {
+    background: var(--Darkdesaturatedblue);
+    text-align: center;
+    padding: 25px;
+    color: var(--White);
+}
+
+.rs {
+    background: var(--Darkdesaturatedblue);
+    text-align: center;
+    padding: 25px;
+    padding-top: 0;
+    color: var(--White);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+#violet {
+    color: var(--Softviolet);
+}
+
+h2 {
+    padding: 10px;
+    font-weight: 700;
+}
+
+p {
+    font-weight: 400;
+    color: var(--Slightlyransparentwhite);
+    padding: 15px 25px;
+}
+
+.rs p {
+    text-transform: uppercase;
+    padding: 0px 25px;
+}
+
+.companies, .templates {
+    padding-bottom: 30px;
+}
+
+@media screen and (min-width: 1440px) {
+    .body {
+        height: 100vh;
+    }
+
+    .content {
+        display: flex;
+        width: 1440px;
+        height: 50%;
+    }
+
+    .color {
+        order: 1;
+        width: 720px;
+        height: 546px;
+        border-bottom-right-radius: 15px;
+        border-top-left-radius: 0;
+    }
+
+    .info {
+        width: 720px;
+        height: 546px;
+    }
+
+    #photo {
+        background: no-repeat center/cover url(./images/image-header-desktop.jpg);
+        width: 100%;
+        height: 100%;
+        border-top-left-radius: 0;
+        border-bottom-right-radius: 15px;
+    }
+
+    .text {
+        padding: 90px;
+        text-align: left;
+        padding-bottom: 40px;
+        border-top-left-radius: 15px;
+    }
+
+    .text h1 {
+        font-size: 42px;
+    }
+
+    .text p {
+        padding-left: 0;
+        padding-right: 150px;
+        line-height: 30px;
+        padding-top: 50px;
+    }
+
+    .rs {
+        display: flex;
+        text-align: left;
+        padding: 90px;
+        padding-top: 0;
+        border-bottom-left-radius: 15px;
+    }
+
+    .rs p {
+        padding-left: 10px;
+        padding-bottom: 0;
+    }
+
+    .companies, .templates {
+        padding-right: 50px;
+        padding-bottom: 0;
+    }
+}
